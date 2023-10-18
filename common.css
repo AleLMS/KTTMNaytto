@@ -1,0 +1,96 @@
+    @font-face {
+        font-family: Poppins;
+        src: url(Media/fonts/poppins/Poppins-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: Arimo;
+        src: url(Media/fonts/Arimo/Arimo-Regular.ttf)
+    }
+
+    @font-face {
+        font-family: Montserrat;
+        src: url(Media/fonts/Montserrat/Montserrat-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: NotoSansTamil;
+        src: url(Media/fonts/NotoSansTamil/NotoSansTamil-Regular.ttf);
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navbar-nav .nav-link.active {
+        font-weight: normal;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    body {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    ul,
+    li {
+        list-style-type: none;
+    }
+
+    html {
+        height: 100svh;
+    }
+
+    /*footer*/
+
+    footer {
+        font-family: Poppins;
+    }
+
+    #icons {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -2em;
+        background-color: rgb(125, 99, 219);
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+        width: 30%;
+        border-radius: 0.5em;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 5em;
+        max-width: 30em;
+        min-width: 300px;
+    }
+
+    .footerIcon {
+        border-radius: 50%;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerIcons {
+        margin: auto;
+        width: 100%;
+        max-width: 5em;
+        margin: 1em;
+    }
+
+    .footerText {
+        margin: 0;
+    }
+
+    .parallaxImage {
+        background-attachment: fixed;
+        background-position: calc(50%) calc(50% - 25%);
+        background-size: cover;
+    }

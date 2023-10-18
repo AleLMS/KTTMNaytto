@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Media/favicon.png">
+    <!-- Resources -->
+    <link rel="stylesheet" href="../main.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" type="module"></script>
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="../common.css">
+
+</head>
+
+<body class="bg-body-secondary">
+    <nav class="navbar navbar-expand-lg bg-body" id="navigationBar">
+        <div class="container-fluid ">
+
+            <a class="navbar-brand" href="../index.html">
+                <img src="../logo5.png" alt="logo" height="100">
+            </a>
+
+            <button id="toggleButton" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <h3 class=" d-none d-xxl-block d-sm-none d-md-none d-lg-none d-xl-none"
+                style="font-family: NotoSansTamil; margin:auto;">
+                Kotkantien Maalaus ja Tapetointi
+            </h3>
+
+            <h5 class=" d-none d-xl-block d-xxl-none" style="font-family: NotoSansTamil; margin:auto;">
+                Kotkantien maalaus ja tapetointi
+            </h5>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ps-md-3 mb-2 mb-lg-0 nav-underline text-center text-lg-end text-xl-end justify-content-end fs-5"
+                    id="ulNav" style="font-family: Arimo;">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../index.html">Etusivu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../Palvelut/palvelut.html">Palvelut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="../Colors/colors.html">Värien Testaus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../Gallery/gallery.html">Galleria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../Contact/contact.html">Yhteystiedot</a>
+                    </li>
+                </ul>
+
+                <button class="btn d-none d-lg-block d-xl-block" id="tarjous" type="submit" style="font-family: Arimo;"
+                    onclick="alert('{LOMAKE}')">
+                    Pyydä tarjous
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div style="margin: 0;" class="container-fluid p-0">
+        <div style="background-image: url('../Media/Images/15.jpg'); max-height: 1080px; height: 55svh; margin: 0;"
+            class="container-fluid p-0 parallaxImage ">
+            <div class="container-fluid" style="height: 100%; box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, .13);">
+                <div class="row" style="height:33%;"></div> <!-- spacer -->
+                <div class="row flex-nowrap justify-content-center overflow-hidden" style="height:33%;">
+                    <div class="vAlignChild sloganContainer animTest">
+                        <h1 class="" style="text-align:center; margin: auto; font-size: min(8svh, 8svw);">
+                            Värien Testaus
+                        </h1>
+                    </div>
+                </div>
+                <div class="row" style="height:33%;"></div> <!-- spacer -->
+            </div>
+        </div>
+
+        <div class="container-fluid rounded-1" style="position: relative; top: -10em;">
+
+            <div class="container rounded-1" id="jsContainer">
+
+                <script type="module" src="colorplayer.js"></script>
+                <div id="threeContainer" class="rounded-1" style="overflow: hidden;">
+                    <div id="threeCanvas"></div>
+
+                    <div id="colorPickTargetContainer">
+
+                        <div class="targetButton">
+                            <input class="tarRadio" type="radio" name="wall" id="wall1" value="1">
+                            <label for="wall1" class="targetLabel">Seinä 1</label>
+                        </div>
+
+                        <div class="targetButton">
+                            <input class="tarRadio" type="radio" name="wall" id="wall2" value="2">
+                            <label for="wall2" class="targetLabel">Seinä 2</label>
+                        </div>
+
+                    </div>
+
+                    <div id="colorPickContainer">
+                        <div id="colorPickContent">
+
+
+                            <input class="colorRadio" type="radio" name="color" id="colorFiesta">
+                            <label class="dot" for="colorFiesta" style="background-color: #DD4132;"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorJesterRed">
+                            <label class="dot" for="colorJesterRed" style="background-color: #9E1030;"
+                                value="JesterRed"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorTurmeric">
+                            <label class="dot" for="colorTurmeric" style="background-color: #FE840E;"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorLivingCoral">
+                            <label class="dot" for="colorLivingCoral" style="background-color: #FF6F61;"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorPinkPeacock">
+                            <label class="dot" for="colorPinkPeacock" style="background-color: #C62168;"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorPepperStem">
+                            <label class="dot" for="colorPepperStem" style="background-color: #8D9440;"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorAspenGold">
+                            <label class="dot" for="colorAspenGold" style="background-color: #FFD662;"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorPrincessBlue">
+                            <label class="dot" for="colorPrincessBlue" style="background-color: #00539C;"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorToffee">
+                            <label class="dot" for="colorToffee" style="background-color: #755139;"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorMangoMojito">
+                            <label class="dot" for="colorMangoMojito" style="background-color: #D69C2F;"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorTerrariumMoss">
+                            <label class="dot" for="colorTerrariumMoss" style="background-color: #616247;"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorSweetLilac">
+                            <label class="dot" for="colorSweetLilac" style="background-color: #E8B5CE;"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorSoybean">
+                            <label class="dot" for="colorSoybean" style="background-color: #D2C29D;"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorEclipse">
+                            <label class="dot" for="colorEclipse" style="background-color: #343148;"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorSweetCorn">
+                            <label class="dot" for="colorSweetCorn" style="background-color: #F0EAD6;"></label>
+
+                            <input class="colorRadio" type="radio" name="color" id="colorBrownGranite">
+                            <label class="dot" for="colorBrownGranite" style="background-color: #615550;"></label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="bg-light-subtle text-muted mb-0 pb-0 d-flex flex-column" style="">
+
+        <div id="icons">
+
+            <div class="footerIcon">
+                <object class="footerIcons" data="../Media/svg/facebook.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="footerIcon">
+                <object class="footerIcons" data="../Media/svg/instagram.svg" type="image/svg+xml"></object>
+            </div>
+
+            <div class="footerIcon">
+                <object class="footerIcons" data="../Media/svg/tiktok.svg" type="image/svg+xml"></object>
+            </div>
+
+
+            <div class="footerIcon">
+                <object class="footerIcons" data="../Media/svg/youtube.svg" type="image/svg+xml"></object>
+            </div>
+        </div>
+
+        <div class=" m-0 p-0 text-black "
+            style="text-align: center; min-height: 2em; display: flex; flex-direction: column; justify-content: space-evenly; ">
+
+            <div class="d-none d-md-flex" style="flex-direction: row; justify-content: center;">
+                <div style="border-right: 1px solid grey; padding-right: 1em;" class="">Kotkantie 3, 90100 Oulu
+                </div>
+                <div style="border-right: 1px solid grey;" class="">
+                    <p style="padding-bottom: 0; margin-bottom: 0; margin-left:1em; margin-right: 1em;">044 999 888
+                        99
+                    </p>
+                </div>
+                <div style="margin-left: 1em;" class="">info@kotkantienmaalaus.fi</div>
+            </div>
+
+            <div class="d-flex d-md-none" style="flex-direction: column; justify-content: center;">
+                <div style=" width: 265px; margin:auto;" class="">Kotkantie 3, 90100
+                    Oulu</div>
+                <div style=" width: 265px; margin:auto;" class="">
+                    <p style="padding-bottom: 0; margin-bottom: 0;">044 999 888 99
+                    </p>
+                </div>
+                <div style="margin-left: 1em;" class="">info@kotkantienmaalaus.fi</div>
+            </div>
+
+            <div class="text-muted" style="margin-top:1em;">© 2023 Kotkantien Maalaus ja Tapetointi</div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

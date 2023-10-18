@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Media/favicon.png">
+    <!-- Resources -->
+
+    <link rel="stylesheet" href="main.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script> -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" type="module"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="common.css">
+
+</head>
+
+<body class="bg-body-secondary">
+    <nav class="navbar navbar-expand-lg bg-body" id="navigationBar">
+        <div class="container-fluid ">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="logo5.png" alt="logo" height="100">
+            </a>
+
+            <button id="toggleButton" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <h3 class=" d-none d-xxl-block d-sm-none d-md-none d-lg-none d-xl-none"
+                style="font-family: NotoSansTamil; margin:auto;">
+                Kotkantien Maalaus ja Tapetointi
+            </h3>
+
+            <h5 class=" d-none d-xl-block d-xxl-none" style="font-family: NotoSansTamil; margin:auto;">
+                Kotkantien maalaus ja tapetointi
+            </h5>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ps-md-3 mb-2 mb-lg-0 nav-underline text-center text-lg-end text-xl-end justify-content-end fs-5"
+                    id="ulNav" style="font-family: Arimo;">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="#">Etusivu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Palvelut/palvelut.html">Palvelut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Colors/colors.html">Värien Testaus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Gallery/gallery.html">Galleria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Contact/contact.html">Yhteystiedot</a>
+                    </li>
+                </ul>
+
+                <button class="btn d-none d-lg-block d-xl-block" id="tarjous" type="submit" style="font-family: Arimo;"
+                    onclick="alert('{LOMAKE}')">
+                    Pyydä tarjous
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div style=" width: 100svw; flex-grow: 1;" id="MainContainer">
+        <div style="background-image: url('Media/Images/1.jpg'); max-height: 1080px; height: 65svh; margin: 0;"
+            class="container-fluid p-0 parallaxImage ">
+            <div class="container-fluid" style="height: 100%; box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, .13);">
+                <div class="row flex-nowrap justify-content-center overflow-hidden" style="height:100%;">
+                    <div class="vAlignChild sloganContainer animTest">
+                        <h1 class="" style="text-align:center; margin: auto; font-size: min(6svh, 6svw);">
+                            Maalaus ja tapetointityöt vankalla ammattitaidolla
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="mainContainer">
+
+            <div class="row mb-4 boxShadow1 rounded-1 overflow-hidden">
+                <div class="col-lg-6 col-sm-12 bg-body p-5">
+                    <h5 class="text-primary-emphasis" style="font-family: Arimo;">Ammattitaitoinen palvelu</h5>
+                    <h3 class="text-primary" style="font-family: Arimo;">Tapetointi ja maalaus Oulun seudulla</h3>
+                    <p class="lh-base" style="font-family: Montserrat; text-align: left;">Hoidamme tapetoinnit ja
+                        maalaukset
+                        siististi ja edullisesti
+                        Oulussa ja
+                        muualla Suomessa.
+                        Teemme myös maalausprojekteja tapetoinnin lisäksi. Esteenä tapetoinnille eivät ole vinot ja
+                        hieman epätasaiset seinät
+                        vaan niiden ulkonäköä saadaan parannettua sillä.</p>
+                    <p class="lh-base" style="font-family: Montserrat; text-align: left;">Tapetoinnin jättäminen
+                        meidän
+                        huoleksi
+                        säästää asiakkaan vaivaa
+                        ja takaa siistin
+                        lopputuloksen.
+                        Työn teettäminen
+                        ammattilaisella ei nosta kustannuksia merkittävästi itse tehtyyn tapetointiin verrattuna
+                        kotitalousvähennyksen ansiosta.
+                        Tapetointi on nopea ja edullinen vaihtoehto kohottaa huoneiden ilmettä, ja oikein tehtynä se
+                        ei
+                        ole myöskään lopullinen
+                        päätös vaan tapetit saa poistettua melko helposti. Ammattilaisella teetetyllä tapetoinnilla
+                        asiakas välttyy ongelmilta
+                        ja sotkulta. Asiantuntija osaa valita oikeat kiinnitystavat ja pystyy tapetoimaan
+                        materiaaleja
+                        säästäen.</p>
+
+                    <button class="yhteysButton btn border-primary" style="margin-top:1em;"
+                        onclick="alert('{LOMAKE}')">Ota yhteyttä</button>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block d-xl-block imgA"
+                    style="background-image: url(Media/Images/9.jpg);">
+                </div>
+            </div>
+
+            <div class="row mb-4 boxShadow1 rounded-1 overflow-hidden">
+                <div class="col-lg-4 d-none d-lg-block d-xl-block imgA"
+                    style="background-image: url(Media/Images/16.jpg);">
+                </div>
+                <div class="col-lg-8 col-sm-12 bg-body p-5">
+
+                    <h3 class="text-primary" style="font-family: Arimo;">Tapetointi antaa rajattomat vaihtoehdot
+                    </h3>
+                    <p class="lh-base" style="font-family: Montserrat; text-align: left;">Tapetointi tuo lähes
+                        rajattomat vaihtoehdot huoneiden sisustamiseen hyvinkin edullisesti. Asiakkaamme saavat
+                        avukseen
+                        yhteistyökumppanimme sisustussuunnittelijat tarpeen vaatiessa. Suunnittelemme tapetoinnin
+                        yhdessä asiakkaan kanssa ja
+                        valitsemme oikeat kiinnitystavat ja laadukkaat materiaalit, jolloin lopputulos on kestävä ja
+                        kaunis. Tapetit pysyvät
+                        vahvasti seinässä, mutta irtoavat helposti, jos ne halutaan vaihtaa.</p>
+
+                    <h4>Maalausprojektit</h4>
+                    <p class="lh-base" style="font-family: Montserrat; text-align: left;">Toteutamme myös
+                        maalausprojekteja asiakkaillemme. Maalaamme ammattimaisesti tasaista jälkeä laadukkailla ja
+                        kestävillä
+                        tuotteilla. Ruiskumaalaus on tehokas menetelmä myös sisätilojen maalauksessa, paneelikaton
+                        ja
+                        seinien maalaus onnistuu
+                        nopeasti ruiskuttamalla. Maalipinnan pitkäikäisestä kestävyydestä voit olla varma, kun
+                        Remonttipalvelut Ylitalo Ky on
+                        asialla.</p>
+                    <button class="yhteysButton btn border-primary" style="margin-top: 1em;"
+                        onclick="alert('{LOMAKE}')">Ota yhteyttä</button>
+                </div>
+
+            </div>
+
+            <div class="row mb-4 boxShadow1 rounded-1 overflow-hidden">
+                <div class="col-lg-7 col-sm-12 bg-body p-5">
+                    <h3 class="text-primary" style="font-family: Arimo;">Vinkkejä tapetin valintaan</h3>
+                    <p class="lh-base" style="font-family: Montserrat; text-align: left;">Toteutamme tapetoinnit
+                        asiakkaan suunnitelmien ja toiveiden mukaan. Voimme esimerkiksi tapetoida yhden seinän
+                        suurikuvioisella ja huomiota herättävällä tapetilla, ja jättää muut seinät yksivärisiksi.
+                        Näin
+                        kuviotapetilla
+                        tapetoidusta seinästä tulee oikea katseenvangitsija. Tämä on erinomainen tapa saada
+                        huoneeseen
+                        persoonallista ilmettä.</p>
+                    <p class="lh-base" style="font-family: Montserrat; text-align: left;">Tapettia valitessa
+                        kannattaa omien mieltymyksen lisäksi huomioida, millaiseen tilaan tapetti tulee. Esimerkiksi
+                        keittiöön ja eteiseen on hyvä valita sellainen tapetti, joka kestää märkäpyyhintää. Myös
+                        tilan
+                        koko ja valoisuus on
+                        syytä muistaa tapetin valinnassa; vaaleat seinäpinnat ovat omiaan luomaan avaraa
+                        vaikutelmaa,
+                        joten vaalea tapetti voi
+                        olla paras valinta ahtaalta tuntuvaan tilaan. Tapetti näyttää erilaiselta luonnonvalossa ja
+                        sisävalaistuksessa – siksi
+                        tapetin näytepalaa kannattaa vertailla eri valaistuksissa.</p>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block d-xl-block imgA"
+                    style="background-image: url(Media/Images/19.jpg);">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="bg-light-subtle text-muted mb-0 pb-0 d-flex flex-column" style="font-family: Poppins;">
+
+        <div id="icons">
+
+            <div class="footerIcon">
+                <object class="footerIcons" data="Media/svg/facebook.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="footerIcon">
+                <object class="footerIcons" data="Media/svg/instagram.svg" type="image/svg+xml"></object>
+            </div>
+
+            <div class="footerIcon">
+                <object class="footerIcons" data="Media/svg/tiktok.svg" type="image/svg+xml"></object>
+            </div>
+
+
+            <div class="footerIcon">
+                <object class="footerIcons" data="Media/svg/youtube.svg" type="image/svg+xml"></object>
+            </div>
+        </div>
+
+        <div class=" m-0 p-0 text-black "
+            style="text-align: center; min-height: 2em; display: flex; flex-direction: column; justify-content: space-evenly; ">
+
+            <div class="d-none d-md-flex" style="flex-direction: row; justify-content: center;">
+                <div style="border-right: 1px solid grey; padding-right: 1em;" class="">Kotkantie 3, 90100 Oulu</div>
+                <div style="border-right: 1px solid grey;" class="">
+                    <p style="padding-bottom: 0; margin-bottom: 0; margin-left:1em; margin-right: 1em;">044 999 888 99
+                    </p>
+                </div>
+                <div style="margin-left: 1em;" class="">info@kotkantienmaalaus.fi</div>
+            </div>
+
+            <div class="d-flex d-md-none" style="flex-direction: column; justify-content: center;">
+                <div style="border-bottom: 1px solid grey; width: 265px; margin:auto;" class="">Kotkantie 3, 90100
+                    Oulu</div>
+                <div style="border-bottom: 1px solid grey; width: 265px; margin:auto;" class="">
+                    <p style="padding-bottom: 0; margin-bottom: 0;">044 999 888 99
+                    </p>
+                </div>
+                <div style="margin-left: 1em;" class="">info@kotkantienmaalaus.fi</div>
+            </div>
+
+            <div class="text-muted" style="margin-top:1em; ">© 2023 Kotkantien Maalaus ja Tapetointi</div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+        :root {}
+
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+        }
+
+        :root {
+            /* threejs window */
+            --threejs-width: 100%;
+            --threejs-height: 75svh;
+
+            /* Color picker */
+            --color-pick-y-pos: 1em;
+            --wall-select-y-pos: 8em;
+            --colorPickTarget-height: 2em;
+        }
+
+        #jsContainer {
+            min-width: 400px;
+            width: 80svw;
+
+        }
+
+        h5 {
+            margin-bottom: 0;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100svh;
+        }
+
+        .test {
+            background-color: rgba(1, 1, 1, 0.25);
+        }
+
+        .frostedGlass {
+            background-color: rgba(255, 255, 255, .15);
+            backdrop-filter: blur(5px);
+        }
+
+        .frostedBorder {
+            border-width: 3px;
+            border-radius: 1em;
+            border-style: solid;
+            border-color: rgba(255, 255, 255, .40);
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .2);
+        }
+
+        #navigationBar {
+            box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, .2);
+        }
+
+        #mainContainer {
+            position: relative;
+            top: -5em;
+        }
+
+        .boxShadow1 {
+            box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, .2);
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .2);
+        }
+
+        .vAlignChild {
+            display: flex;
+            align-items: center;
+        }
+
+        #tarjous {
+            border-radius: 2em;
+            margin-right: 1em;
+            font-size: 1.1em;
+            width: 10.5em;
+            height: 3.2em;
+            background-color: rgb(125, 99, 219);
+            color: white;
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+        }
+
+        .sloganContainer {
+            min-width: 500px;
+            width: 50%;
+            height: 100%;
+        }
+
+        .imgA {
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: sticky;
+        }
+
+        .animTest {
+            animation: 1s ease-out 0s 1 slideInFromLeft;
+        }
+
+        .sloganContainer h1 {
+            text-wrap: balance;
+            font-family: Poppins;
+            color: white;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+        }
+
+        #ulNav {
+            width: 100%;
+            padding-right: 1em;
+        }
+
+        #toggleButton {
+            width: 5em;
+            height: 3em;
+        }
+
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        #threeContainer {
+            display: flex;
+            position: relative;
+            padding-left: 0;
+            padding-right: 0;
+            overflow: hidden;
+            min-width: var(--threejs-width);
+            min-height: var(--threejs-height);
+            box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, .2);
+        }
+
+        #threeCanvas {
+            min-width: var(--threejs-width);
+            min-height: var(--threejs-height);
+
+            margin: auto;
+            position: relative;
+
+            box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, .2);
+        }
+
+        #colorPickContainer {
+            background-color: rgba(255, 255, 255, .15);
+            backdrop-filter: blur(5px);
+            border-radius: .4em;
+
+            position: absolute;
+            bottom: var(--color-pick-y-pos);
+            width: 35%;
+            min-width: 300px;
+            height: 8em;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            display: flex;
+            justify-content: center;
+
+            overflow: scroll;
+        }
+
+        #colorPickTargetContainer {
+            width: 25%;
+            min-width: 250px;
+            height: var(--colorPickTarget-height);
+
+            border-top-right-radius: .25em;
+            border-top-left-radius: .25em;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: calc(var(--color-pick-y-pos) + var(--wall-select-y-pos));
+
+            display: flex;
+            justify-content: space-around;
+            gap: 1em;
+            z-index: 10;
+        }
+
+        .tarRadio:checked+label {
+            color: white;
+            background-color: #2c91d4;
+            border: 3px solid white;
+            border-bottom: none;
+            border-top-right-radius: .5em;
+            border-top-left-radius: .5em;
+        }
+
+        .targetButton {
+            width: 10em;
+            height: var(--colorPickTarget-height);
+
+        }
+
+        .targetLabel {
+            height: 100%;
+            width: 100%;
+            display: block;
+            margin: auto;
+            text-align: center;
+            line-height: var(--colorPickTarget-height);
+
+            background-color: rgb(87, 119, 155);
+            color: grey;
+
+            border-top-right-radius: .25em;
+            border-top-left-radius: .25em;
+        }
+
+        #colorPickContainer {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        #colorPickContainer::-webkit-scrollbar {
+            display: none;
+        }
+
+        #colorPickTarget1 {}
+
+        #colorPickContent {
+            margin: auto;
+            padding: 1em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .dot {
+            height: 2.7em;
+            width: 2.7em;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: orange;
+            margin: .25em;
+            box-shadow: 0px 0px 3px #3f3f3f;
+        }
+
+        .colorRadio:checked+label {
+            border: 2px solid white;
+        }

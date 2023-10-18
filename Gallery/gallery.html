@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Media/favicon.png">
+    <!-- Resources -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../main.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" type="module"></script>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="../common.css">
+
+</head>
+
+<body class="bg-body-secondary">
+
+    <nav class="navbar navbar-expand-lg bg-body" id="navigationBar">
+        <div class="container-fluid ">
+
+            <a class="navbar-brand" href="../index.html">
+                <img src="../logo5.png" alt="logo" height="100">
+            </a>
+
+            <button id="toggleButton" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <h3 class=" d-none d-xxl-block d-sm-none d-md-none d-lg-none d-xl-none"
+                style="font-family: NotoSansTamil; margin:auto;">
+                Kotkantien Maalaus ja Tapetointi
+            </h3>
+
+            <h5 class=" d-none d-xl-block d-xxl-none" style="font-family: NotoSansTamil; margin:auto;">
+                Kotkantien maalaus ja tapetointi
+            </h5>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ps-md-3 mb-2 mb-lg-0 nav-underline text-center text-lg-end text-xl-end justify-content-end fs-5"
+                    id="ulNav" style="font-family: Arimo;">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../index.html">Etusivu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../Palvelut/palvelut.html">Palvelut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../Colors/colors.html">Värien Testaus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="../Gallery/gallery.html">Galleria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../Contact/contact.html">Yhteystiedot</a>
+                    </li>
+                </ul>
+
+                <button class="btn d-none d-lg-block d-xl-block" id="tarjous" type="submit" style="font-family: Arimo;"
+                    onclick="alert('{LOMAKE}')">
+                    Pyydä tarjous
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div style="margin: 0;" class="container-fluid p-0">
+        <div style="background-image: url('../Media/Images/24.jpg'); max-height: 1080px; height: 55svh; margin: 0;"
+            class="container-fluid p-0 parallaxImage ">
+            <div class="container-fluid" style="height: 100%; box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, .13);">
+                <div class="row" style="height:33%;"></div> <!-- spacer -->
+                <div class="row flex-nowrap justify-content-center overflow-hidden" style="height:33%;">
+                    <div class="vAlignChild sloganContainer animTest">
+                        <h1 class="" style="text-align:center; margin: auto; font-size: min(8svh, 8svw);">
+                            Galleria
+                        </h1>
+                    </div>
+                </div>
+                <div class="row" style="height:33%;"></div> <!-- spacer -->
+            </div>
+        </div>
+
+        <div class="container-fluid" style="position: relative; top: -10em;">
+            <div class="galleryContainer bg-body container p-4 rounded-1" style="min-height: 45em;">
+                <li>
+                    <img src="../Media/Images/1.jpg" alt="" onclick="OpenImage(this.src)" />
+                </li>
+                <li>
+                    <img src="../Media/Images/2.jpg" alt="" onclick="OpenImage(this.src)" />
+                </li>
+                <li>
+                    <img src="../Media/Images/20.jpg" alt="" onclick="OpenImage(this.src)" />
+                </li>
+                <li>
+                    <img src="../Media/Images/4.jpg" alt="" onclick="OpenImage(this.src)" />
+                </li>
+                <li>
+                    <img src="../Media/Images/22.jpg" alt="" onclick="OpenImage(this.src)" />
+                </li>
+                <li>
+                    <img src="../Media/Images/6.jpg" alt="" onclick="OpenImage(this.src)" />
+                </li>
+                <li>
+                    <img src="../Media/Images/7.jpg" alt="" onclick="OpenImage(this.src)" />
+                </li>
+                <li>
+                    <img src="../Media/Images/12.jpg" alt="" onclick="OpenImage(this.src)" />
+                </li>
+                <li>
+                    <img src="../Media/Images/19.jpg" alt="" onclick="OpenImage(this.src)" />
+                </li>
+                <li>
+                    <img src="../Media/Images/17.jpg" alt="" onclick="OpenImage(this.src)" />
+                </li>
+                <li>
+                    <img src="../Media/Images/16.jpg" alt="" onclick="OpenImage(this.src)" />
+                </li>
+                <li>
+                    <img src="../Media/Images/15.jpg" alt="" onclick="OpenImage(this.src)" />
+                </li>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="bg-light-subtle text-muted mb-0 pb-0 d-flex flex-column" style="">
+
+        <div id="icons">
+
+            <div class="footerIcon">
+                <object class="footerIcons" data="../Media/svg/facebook.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="footerIcon">
+                <object class="footerIcons" data="../Media/svg/instagram.svg" type="image/svg+xml"></object>
+            </div>
+
+            <div class="footerIcon">
+                <object class="footerIcons" data="../Media/svg/tiktok.svg" type="image/svg+xml"></object>
+            </div>
+
+
+            <div class="footerIcon">
+                <object class="footerIcons" data="../Media/svg/youtube.svg" type="image/svg+xml"></object>
+            </div>
+        </div>
+
+        <div class=" m-0 p-0 text-black "
+            style="text-align: center; min-height: 2em; display: flex; flex-direction: column; justify-content: space-evenly; ">
+
+            <div class="d-none d-md-flex" style="flex-direction: row; justify-content: center;">
+                <div style="border-right: 1px solid grey; padding-right: 1em;" class="">Kotkantie 3, 90100 Oulu
+                </div>
+                <div style="border-right: 1px solid grey;" class="">
+                    <p style="padding-bottom: 0; margin-bottom: 0; margin-left:1em; margin-right: 1em;">044 999 888
+                        99
+                    </p>
+                </div>
+                <div style="margin-left: 1em;" class="">info@kotkantienmaalaus.fi</div>
+            </div>
+
+            <div class="d-flex d-md-none" style="flex-direction: column; justify-content: center;">
+                <div style=" width: 265px; margin:auto;" class="">Kotkantie 3, 90100
+                    Oulu</div>
+                <div style=" width: 265px; margin:auto;" class="">
+                    <p style="padding-bottom: 0; margin-bottom: 0;">044 999 888 99
+                    </p>
+                </div>
+                <div style="margin-left: 1em;" class="">info@kotkantienmaalaus.fi</div>
+            </div>
+
+            <div class="text-muted" style="margin-top:1em; ">© 2023 Kotkantien Maalaus ja Tapetointi</div>
+        </div>
+
+    </footer>
+
+    <div id="fullImageContainer">
+        <div id="close area" style="width: 100%; height: 100svh; position: fixed; top: 0; left: 0; z-index: -5;"
+            onclick="CloseImg()"></div>
+        <img id="fullImage" src="../Media/Images/1.jpg">
+        <span id="closeImage" onclick="CloseImg()">X</span>
+    </div>
+
+    <script>
+
+        var fullImgContainer = document.getElementById("fullImageContainer");
+        var fullImg = document.getElementById("fullImage");
+
+        function OpenImage(file) {
+
+            fullImgContainer.style.display = "flex";
+            fullImg.src = file;
+        }
+
+        function CloseImg() {
+            fullImgContainer.style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>
