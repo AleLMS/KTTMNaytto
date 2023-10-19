@@ -254,3 +254,20 @@
         .colorRadio:checked+label {
             border: 2px solid white;
         }
+
+        .tooltipText {
+            visibility: hidden;
+            width: 120px;
+            color: #fff;
+            text-shadow: 0 0 3px black;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            transform: translate(-75%, -75%);
+            z-index: 10;
+        }
+
+        .colorEntry:hover span {
+            visibility: visible !important;
+        }

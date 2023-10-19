@@ -57,7 +57,7 @@
                 </ul>
 
                 <button class="btn d-none d-lg-block d-xl-block" id="tarjous" type="submit" style="font-family: Arimo;"
-                    onclick="alert('{LOMAKE}')">
+                    onclick="OpenForm()">
                     Pyydä tarjous
                 </button>
 
@@ -107,55 +107,102 @@
                     <div id="colorPickContainer">
                         <div id="colorPickContent">
 
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorFiesta">
+                                <label class="dot" for="colorFiesta" style="background-color: #DD4132;"></label>
+                                <span class="tooltipText">Fiesta</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorFiesta">
-                            <label class="dot" for="colorFiesta" style="background-color: #DD4132;"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorJesterRed">
+                                <label class="dot" for="colorJesterRed" style="background-color: #9E1030;"
+                                    value="JesterRed"></label>
+                                <span class="tooltipText">Jester Red</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorJesterRed">
-                            <label class="dot" for="colorJesterRed" style="background-color: #9E1030;"
-                                value="JesterRed"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorTurmeric">
+                                <label class="dot" for="colorTurmeric" style="background-color: #FE840E;"></label>
+                                <span class="tooltipText">Tumeric</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorTurmeric">
-                            <label class="dot" for="colorTurmeric" style="background-color: #FE840E;"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorLivingCoral">
+                                <label class="dot" for="colorLivingCoral" style="background-color: #FF6F61;"></label>
+                                <span class="tooltipText">Living Coral</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorLivingCoral">
-                            <label class="dot" for="colorLivingCoral" style="background-color: #FF6F61;"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorPinkPeacock">
+                                <label class="dot" for="colorPinkPeacock" style="background-color: #C62168;"></label>
+                                <span class="tooltipText">Pink Peacock</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorPinkPeacock">
-                            <label class="dot" for="colorPinkPeacock" style="background-color: #C62168;"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorPepperStem">
+                                <label class="dot" for="colorPepperStem" style="background-color: #8D9440;"></label>
+                                <span class="tooltipText">Pepper Stem</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorPepperStem">
-                            <label class="dot" for="colorPepperStem" style="background-color: #8D9440;"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorAspenGold">
+                                <label class="dot" for="colorAspenGold" style="background-color: #FFD662;"></label>
+                                <span class="tooltipText">Aspen Gold</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorAspenGold">
-                            <label class="dot" for="colorAspenGold" style="background-color: #FFD662;"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorPrincessBlue">
+                                <label class="dot" for="colorPrincessBlue" style="background-color: #00539C;"></label>
+                                <span class="tooltipText">Princess Blue</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorPrincessBlue">
-                            <label class="dot" for="colorPrincessBlue" style="background-color: #00539C;"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorToffee">
+                                <label class="dot" for="colorToffee" style="background-color: #755139;"></label>
+                                <span class="tooltipText">Toffee</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorToffee">
-                            <label class="dot" for="colorToffee" style="background-color: #755139;"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorMangoMojito">
+                                <label class="dot" for="colorMangoMojito" style="background-color: #D69C2F;"></label>
+                                <span class="tooltipText">Mango Mojito</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorMangoMojito">
-                            <label class="dot" for="colorMangoMojito" style="background-color: #D69C2F;"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorTerrariumMoss">
+                                <label class="dot" for="colorTerrariumMoss" style="background-color: #616247;"></label>
+                                <span class="tooltipText">Terrarium Moss</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorTerrariumMoss">
-                            <label class="dot" for="colorTerrariumMoss" style="background-color: #616247;"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorSweetLilac">
+                                <label class="dot" for="colorSweetLilac" style="background-color: #E8B5CE;"></label>
+                                <span class="tooltipText">Sweet Lilac</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorSweetLilac">
-                            <label class="dot" for="colorSweetLilac" style="background-color: #E8B5CE;"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorSoybean">
+                                <label class="dot" for="colorSoybean" style="background-color: #D2C29D;"></label>
+                                <span class="tooltipText">Soybean</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorSoybean">
-                            <label class="dot" for="colorSoybean" style="background-color: #D2C29D;"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorEclipse">
+                                <label class="dot" for="colorEclipse" style="background-color: #343148;"></label>
+                                <span class="tooltipText">Eclipse</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorEclipse">
-                            <label class="dot" for="colorEclipse" style="background-color: #343148;"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorSweetCorn">
+                                <label class="dot" for="colorSweetCorn" style="background-color: #F0EAD6;"></label>
+                                <span class="tooltipText">Sweetcorn</span>
+                            </div>
 
-                            <input class="colorRadio" type="radio" name="color" id="colorSweetCorn">
-                            <label class="dot" for="colorSweetCorn" style="background-color: #F0EAD6;"></label>
-
-                            <input class="colorRadio" type="radio" name="color" id="colorBrownGranite">
-                            <label class="dot" for="colorBrownGranite" style="background-color: #615550;"></label>
+                            <div class="colorEntry">
+                                <input class="colorRadio" type="radio" name="color" id="colorBrownGranite">
+                                <label class="dot" for="colorBrownGranite" style="background-color: #615550;"></label>
+                                <span class="tooltipText">Brown Granite</span>
+                            </div>
 
                         </div>
                     </div>
@@ -215,7 +262,53 @@
         </div>
 
     </footer>
+    <div id="yhteysLomakeContainer"
+        style="position: fixed; top:0; left:0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, .9); display:none; justify-content: center; align-items: center;">
+        <div id="close area" style="width: 100%; height: 100svh; position: fixed; top: 0; left: 0; z-index: -5;"
+            onclick="CloseContact()"></div>
 
+        <div id="formContainer" class="p-3 rounded-1 bg-body" style="width: 20%">
+            <form id="contactForm" class="m-3"
+                style="display:flex; flex-direction: column; gap:.5em; font-family: Montserrat;">
+                <h2 style="text-align: center; margin-bottom: 1.25em; margin-top: 1em; font-family: NotoSansTamil">
+                    Yhteydenotto</h2>
+
+                <div style="display:flex; flex-direction: row; justify-content: space-between; gap: .5em;">
+                    <input type="text" id="fname" name="firstname" placeholder="Etunimi" style="width: 100%">
+                    <input type="text" id="lname" name="lastname" placeholder="Sukunimi" style="width: 100%">
+                </div>
+
+                <div style="display:flex; flex-direction: column;">
+                    <input type="text" id="fname" name="email" placeholder="Sähköposti">
+                </div>
+
+                <div style="display:flex; flex-direction: column;">
+                    <textarea id="subject" name="subject" placeholder="Viesti" style="height:200px"></textarea>
+                </div>
+
+                <div style="display:flex; flex-direction: column;">
+                    <input id="submitContact" type="submit" value="Lähetä" class="rounded-4"
+                        style="max-width: 130px; height:2.5em; margin-top:1em;">
+                </div>
+
+            </form>
+
+        </div>
+        <span id="closeForm" onclick="CloseContact()">X</span>
+    </div>
+
+    <script>
+        var yhteysLomakeContainer = document.getElementById("yhteysLomakeContainer");
+
+        function OpenForm() {
+            yhteysLomakeContainer.style.display = "flex";
+        }
+
+        function CloseContact() {
+            yhteysLomakeContainer.style.display = "none";
+        }
+
+    </script>
 </body>
 
 </html>

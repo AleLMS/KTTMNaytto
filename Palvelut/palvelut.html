@@ -57,7 +57,7 @@
                 </ul>
 
                 <button class="btn d-none d-lg-block d-xl-block" id="tarjous" type="submit" style="font-family: Arimo;"
-                    onclick="alert('{LOMAKE}')">
+                    onclick="OpenForm()">
                     Pyydä tarjous
                 </button>
 
@@ -99,7 +99,7 @@
 
                                 <div class="contentText m-3 m-lg-5"
                                     style="margin-top: 1.2em !important; margin-bottom:0 !important;">
-                                    <p style="font-family: Montserrat; font-size: 1.15em;">
+                                    <p style="font-family: Montserrat; font-size: 1.1em;">
                                         Teemme katseen ja sään kestävät pinnat. Saneerauskohteissa hoidamme tarvittavat
                                         korjaus– ja pohjatyöt sekä luomme uutta
                                         ilmettä pinnoille toiveidenne mukaisesti. Uudiskohteissa teemme nauhoitus ja
@@ -109,7 +109,7 @@
                                     <div class="buttonContainer"
                                         style="display:flex; flex-direction: column; justify-content: center;">
                                         <button class="palvelutNappi btn border-primary"
-                                            style="margin-top: 1em; font-size: 1.5em;" onclick="alert('{LOMAKE}')">Varaa
+                                            style="margin-top: 1em; font-size: 1.5em;" onclick="OpenForm()">Varaa
                                             aika</button>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@
 
                                 <div class="contentText m-3 m-lg-5"
                                     style="margin-top: 1.2em !important; margin-bottom:0 !important;">
-                                    <p class="m-0 p-0" style="font-family: Montserrat; font-size: 1.15em;">
+                                    <p class="m-0 p-0" style="font-family: Montserrat; font-size: 1.1em;">
                                         Onko vanha kuosi alkanut kyllästyttämään vai löysitkö jotain todella lumoavaa?
                                         Tapetti on ihana ja helppo ilmeen tuoja!
                                         Irrotamme vanhat tapetit ja teemme tarvittavat pohjatyöt. On valintasi mikä
@@ -137,7 +137,7 @@
                                     <div class="buttonContainer"
                                         style="display:flex; flex-direction: column; justify-content: center;">
                                         <button class="palvelutNappi btn border-primary"
-                                            style="margin-top: 1em; font-size: 1.5em;" onclick="alert('{LOMAKE}')">Varaa
+                                            style="margin-top: 1em; font-size: 1.5em;" onclick="OpenForm()">Varaa
                                             aika</button>
                                     </div>
                                 </div>
@@ -200,7 +200,53 @@
         </div>
 
     </footer>
+    <div id="yhteysLomakeContainer"
+        style="position: fixed; top:0; left:0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, .9); display:none; justify-content: center; align-items: center;">
+        <div id="close area" style="width: 100%; height: 100svh; position: fixed; top: 0; left: 0; z-index: -5;"
+            onclick="CloseContact()"></div>
 
+        <div id="formContainer" class="p-3 rounded-1 bg-body" style="width: 20%">
+            <form id="contactForm" class="m-3"
+                style="display:flex; flex-direction: column; gap:.5em; font-family: Montserrat;">
+                <h2 style="text-align: center; margin-bottom: 1.25em; margin-top: 1em; font-family: NotoSansTamil">
+                    Yhteydenotto</h2>
+
+                <div style="display:flex; flex-direction: row; justify-content: space-between; gap: .5em;">
+                    <input type="text" id="fname" name="firstname" placeholder="Etunimi" style="width: 100%">
+                    <input type="text" id="lname" name="lastname" placeholder="Sukunimi" style="width: 100%">
+                </div>
+
+                <div style="display:flex; flex-direction: column;">
+                    <input type="text" id="fname" name="email" placeholder="Sähköposti">
+                </div>
+
+                <div style="display:flex; flex-direction: column;">
+                    <textarea id="subject" name="subject" placeholder="Viesti" style="height:200px"></textarea>
+                </div>
+
+                <div style="display:flex; flex-direction: column;">
+                    <input id="submitContact" type="submit" value="Lähetä" class="rounded-4"
+                        style="max-width: 130px; height:2.5em; margin-top:1em;">
+                </div>
+
+            </form>
+
+        </div>
+        <span id="closeForm" onclick="CloseContact()">X</span>
+    </div>
+
+    <script>
+        var yhteysLomakeContainer = document.getElementById("yhteysLomakeContainer");
+
+        function OpenForm() {
+            yhteysLomakeContainer.style.display = "flex";
+        }
+
+        function CloseContact() {
+            yhteysLomakeContainer.style.display = "none";
+        }
+
+    </script>
 </body>
 
 </html>

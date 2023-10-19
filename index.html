@@ -61,7 +61,7 @@
                 </ul>
 
                 <button class="btn d-none d-lg-block d-xl-block" id="tarjous" type="submit" style="font-family: Arimo;"
-                    onclick="alert('{LOMAKE}')">
+                    onclick="OpenForm()">
                     Pyydä tarjous
                 </button>
 
@@ -118,8 +118,8 @@
                         materiaaleja
                         säästäen.</p>
 
-                    <button class="yhteysButton btn border-primary" style="margin-top:1em;"
-                        onclick="alert('{LOMAKE}')">Ota yhteyttä</button>
+                    <button class="yhteysButton btn border-primary" style="margin-top:1em;" onclick="OpenForm()">Ota
+                        yhteyttä</button>
                 </div>
                 <div class="col-lg-6 d-none d-lg-block d-xl-block imgA"
                     style="background-image: url(Media/Images/9.jpg);">
@@ -153,8 +153,8 @@
                         nopeasti ruiskuttamalla. Maalipinnan pitkäikäisestä kestävyydestä voit olla varma, kun
                         Remonttipalvelut Ylitalo Ky on
                         asialla.</p>
-                    <button class="yhteysButton btn border-primary" style="margin-top: 1em;"
-                        onclick="alert('{LOMAKE}')">Ota yhteyttä</button>
+                    <button class="yhteysButton btn border-primary" style="margin-top: 1em;" onclick="OpenForm()">Ota
+                        yhteyttä</button>
                 </div>
 
             </div>
@@ -225,9 +225,9 @@
             </div>
 
             <div class="d-flex d-md-none" style="flex-direction: column; justify-content: center;">
-                <div style="border-bottom: 1px solid grey; width: 265px; margin:auto;" class="">Kotkantie 3, 90100
+                <div style=" width: 265px; margin:auto;" class="">Kotkantie 3, 90100
                     Oulu</div>
-                <div style="border-bottom: 1px solid grey; width: 265px; margin:auto;" class="">
+                <div style=" width: 265px; margin:auto;" class="">
                     <p style="padding-bottom: 0; margin-bottom: 0;">044 999 888 99
                     </p>
                 </div>
@@ -238,6 +238,54 @@
         </div>
 
     </footer>
+
+    <div id="yhteysLomakeContainer"
+        style="position: fixed; top:0; left:0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, .9); display:none; justify-content: center; align-items: center;">
+        <div id="close area" style="width: 100%; height: 100svh; position: fixed; top: 0; left: 0; z-index: -5;"
+            onclick="CloseContact()"></div>
+
+        <div id="formContainer" class="p-3 rounded-1 bg-body" style="width: 20%">
+            <form id="contactForm" class="m-3"
+                style="display:flex; flex-direction: column; gap:.5em; font-family: Montserrat;">
+                <h2 style="text-align: center; margin-bottom: 1.25em; margin-top: 1em; font-family: NotoSansTamil">
+                    Yhteydenotto</h2>
+
+                <div style="display:flex; flex-direction: row; justify-content: space-between; gap: .5em;">
+                    <input type="text" id="fname" name="firstname" placeholder="Etunimi" style="width: 100%">
+                    <input type="text" id="lname" name="lastname" placeholder="Sukunimi" style="width: 100%">
+                </div>
+
+                <div style="display:flex; flex-direction: column;">
+                    <input type="text" id="fname" name="email" placeholder="Sähköposti">
+                </div>
+
+                <div style="display:flex; flex-direction: column;">
+                    <textarea id="subject" name="subject" placeholder="Viesti" style="height:200px"></textarea>
+                </div>
+
+                <div style="display:flex; flex-direction: column;">
+                    <input id="submitContact" type="submit" value="Lähetä" class="rounded-4"
+                        style="max-width: 130px; height:2.5em; margin-top:1em;">
+                </div>
+
+            </form>
+
+        </div>
+        <span id="closeForm" onclick="CloseContact()">X</span>
+    </div>
+
+    <script>
+        var yhteysLomakeContainer = document.getElementById("yhteysLomakeContainer");
+
+        function OpenForm() {
+            yhteysLomakeContainer.style.display = "flex";
+        }
+
+        function CloseContact() {
+            yhteysLomakeContainer.style.display = "none";
+        }
+
+    </script>
 </body>
 
 </html>

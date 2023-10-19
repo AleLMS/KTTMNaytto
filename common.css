@@ -94,3 +94,38 @@
         background-position: calc(50%) calc(50% - 25%);
         background-size: cover;
     }
+
+    /* contact form */
+
+    #formContainer {
+        min-width: 300px !important;
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+        padding: .3em;
+        padding-left: .5em;
+    }
+
+    #contactForm input:focus,
+    #contactForm textarea:focus {
+        border: 2px solid rgb(125, 99, 219);
+    }
+
+    #submitContact {
+        background-color: white;
+        border: 2px solid rgb(125, 99, 219);
+    }
+
+    #submitContact:hover {
+        background-color: rgba(125, 99, 219, 0.5);
+    }
+
+    #closeForm {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 3em;
+        color: white;
+        cursor: pointer;
+    }

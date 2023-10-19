@@ -58,7 +58,7 @@
                 </ul>
 
                 <button class="btn d-none d-lg-block d-xl-block" id="tarjous" type="submit" style="font-family: Arimo;"
-                    onclick="alert('{LOMAKE}')">
+                    onclick="OpenForm()">
                     Pyydä tarjous
                 </button>
 
@@ -148,6 +148,14 @@
 
 
             </div>
+
+            <div class="container"
+                style=" margin-top:3em; display:flex; align-items: center; justify-content: center; ">
+                <button class="btn " id="tarjous" type="submit"
+                    style="font-family: Arimo; width: 33%; min-width: 200px; font-size: 1.35em;" onclick="OpenForm()">
+                    Ota Yhteyttä
+                </button>
+            </div>
         </div>
 
     </div>
@@ -203,6 +211,54 @@
 
     </footer>
 
+
+    <div id="yhteysLomakeContainer"
+        style="position: fixed; top:0; left:0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, .9); display:none; justify-content: center; align-items: center;">
+        <div id="close area" style="width: 100%; height: 100svh; position: fixed; top: 0; left: 0; z-index: -5;"
+            onclick="CloseContact()"></div>
+
+        <div id="formContainer" class="p-3 rounded-1 bg-body" style="width: 20%">
+            <form id="contactForm" class="m-3"
+                style="display:flex; flex-direction: column; gap:.5em; font-family: Montserrat;">
+                <h2 style="text-align: center; margin-bottom: 1.25em; margin-top: 1em; font-family: NotoSansTamil">
+                    Yhteydenotto</h2>
+
+                <div style="display:flex; flex-direction: row; justify-content: space-between; gap: .5em;">
+                    <input type="text" id="fname" name="firstname" placeholder="Etunimi" style="width: 100%">
+                    <input type="text" id="lname" name="lastname" placeholder="Sukunimi" style="width: 100%">
+                </div>
+
+                <div style="display:flex; flex-direction: column;">
+                    <input type="text" id="fname" name="email" placeholder="Sähköposti">
+                </div>
+
+                <div style="display:flex; flex-direction: column;">
+                    <textarea id="subject" name="subject" placeholder="Viesti" style="height:200px"></textarea>
+                </div>
+
+                <div style="display:flex; flex-direction: column;">
+                    <input id="submitContact" type="submit" value="Lähetä" class="rounded-4"
+                        style="max-width: 130px; height:2.5em; margin-top:1em;">
+                </div>
+
+            </form>
+
+        </div>
+        <span id="closeForm" onclick="CloseContact()">X</span>
+    </div>
+
+    <script>
+        var yhteysLomakeContainer = document.getElementById("yhteysLomakeContainer");
+
+        function OpenForm() {
+            yhteysLomakeContainer.style.display = "flex";
+        }
+
+        function CloseContact() {
+            yhteysLomakeContainer.style.display = "none";
+        }
+
+    </script>
 </body>
 
 </html>
